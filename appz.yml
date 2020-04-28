@@ -1,0 +1,32 @@
+app:
+  name: Kafka Producer
+  code: KAFKACAT 
+  notify: appzdev@cloudbourne.co
+    
+build:
+  version: 5.1
+  env: DEV
+  build_file: none
+  output_files: output/*.zip
+  image_template: kafkacat_producer:5.1
+  image_name: alpha/kafka_producer
+    
+deploy:
+  context: alpha/DEV
+  replicas: 1
+  port:
+  - 80
+    
+monitor:
+  notify: appzops@cloudbourne.co      
+    
+properties:
+  KAFKA_BROKER_ADDRESS: confluent.appzdemo.com:31110
+  KAFKA_TOPICS: appztest
+  TIME_INTERVAL: 5
+  SECURITY_PROTOCOL: SASL_PLAINTEXT
+  SASL_MECHANISM: PLAIN
+  KAFKA_USER: test
+  KAFKA_PASSWORD:
+    vault: KAFKA_PASSWORD
+  revision : 33
