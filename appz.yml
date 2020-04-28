@@ -8,7 +8,7 @@ build:
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: kafkacat_producer
+  image_template: kafkacat_producer-5.1
   image_name: alpha/kafka_producer
     
 deploy:
