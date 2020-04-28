@@ -29,4 +29,4 @@ properties:
   KAFKA_USER: test
   KAFKA_PASSWORD:
     vault: KAFKA_PASSWORD
-  revision : 33
+  revision : 03
