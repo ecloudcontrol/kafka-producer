@@ -21,7 +21,7 @@ monitor:
   notify: appzops@cloudbourne.co      
     
 properties:
-  KAFKA_BROKER: kafka.appz.demo.com:9092
+  KAFKA_BROKER: kafka.appzdemo.com:9092
   KAFKA_TOPICS: appztest
   TIME_INTERVAL: 5
   SECURITY_PROTOCOL: SASL_PLAINTEXT
