@@ -23,7 +23,8 @@ monitor:
 properties:
   KAFKA_BROKER: kafka.appzdemo.com:9092
   KAFKA_TOPICS: appztest
-  TIME_INTERVAL: 5
+  KAFKA_DELAY: 5
+  KAFKA_MSG_NO: 5
   SECURITY_PROTOCOL: SASL_PLAINTEXT
   SASL_MECHANISM: PLAIN
   KAFKA_USER: test
