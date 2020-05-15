@@ -22,9 +22,7 @@ monitor:
     
 properties:
   KAFKA_BROKER: kafka.appzdemo.com:9092
-  KAFKA_TOPICS: appzalphademo
-  KAFKA_DELAY: 10
-  KAFKA_MSG_NO: 1
+  KAFKA_TOPICS: qwerty123:5:60,zzztopic:5:60
   SECURITY_PROTOCOL: SASL_PLAINTEXT
   SASL_MECHANISM: PLAIN
   KAFKA_USER: test
