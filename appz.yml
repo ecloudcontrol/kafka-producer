@@ -27,4 +27,4 @@ properties:
   SASL_MECHANISM: PLAIN
   KAFKA_USER: test
   KAFKA_PASSWORD: test123
-  revision : 24
+  revision : 25
